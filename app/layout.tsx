@@ -12,6 +12,16 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata = {
   title: "Mayank Kumar | Personal Portfolio",
   description: "Mayank is a full-stack developer with 3 years of experience.",
+  icons: {
+    icon: [
+      { url: '/favicon.ico', sizes: '32x32' },
+      { url: '/icon.png', sizes: '512x512' },
+    ],
+    apple: {
+      url: '/apple-icon.png',
+      sizes: '180x180',
+    },
+  },
 };
 
 export default function RootLayout({
