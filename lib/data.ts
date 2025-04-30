@@ -5,6 +5,10 @@ import { LuGraduationCap } from "react-icons/lu";
 import corpcommentImg from "@/public/corpcomment.png";
 import rmtdevImg from "@/public/rmtdev.png";
 import wordanalyticsImg from "@/public/wordanalytics.png";
+import Sentiment_analysis from "@/public/Sentiment_analysis.png";
+import url_shortener from "@/public/url_shortener.png";
+import signature_verifier from "@/public/signature_verifier.png";
+import preorder from "@/public/quality.png";
 
 export const links = [
   {
@@ -35,73 +39,84 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
+    title: "Member of Technical Staff / Full Stack Developer",
+    location: "SMC Global Securities — Fintech, Delhi, India",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
+      "Developed sentiment analysis platform leveraging AWS Bedrock (Claude 3 Haiku LLM). Built reliable URL Shortener with admin dashboard using AWS CDK, Lambda, API Gateway, CloudFront, and Cognito. Built Advanced Signature Verification System using Next.js, AWS Textract, ML Model using Siamese Network deployed on AWS SageMaker and DynamoDB.Developed an Insurance Cross-Selling Platform with Next.js 14, TypeScript, AWS DynamoDB, integrating 3rd party APIs for real-time policy and premium calculations.  Revamping a Windows Forms-based Pre-Order Service RegTech App into a Next.js web app while migrating from Oracle SQL to Microsoft SQL Server ",
     icon: React.createElement(LuGraduationCap),
-    date: "2019",
+    date: "July 2024 - Present",
   },
   {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
+    title: "Digital Specialist Engineer / Full Stack Developer",
+    location: "Infosys Limited, Chandigarh, Haryana",
     description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
+      "Designed a reliable trailer and container tracking system for Wabtec Corporation. Developed RESTful APIs using Node.js and Express.js. Implemented Cerbos for decentralized RBAC and ABAC authorization. Improved frontend performance with React.js, React Router, Axios, and Material UI.",
     icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
+    date: "June 2022 - July 2024",
   },
-  {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
-    description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-    icon: React.createElement(FaReact),
-    date: "2021 - present",
-  },
-] as const;
+];
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "Chat Sentiment Analysis App",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: corpcommentImg,
+      "Developed a full-stack serverless sentiment analysis platform leveraging AWS Bedrock (Claude 3 Haiku) for sentiment, entity, and satisfaction score extraction from conversations.",
+    tags: ["React", "Next.js", "AWS Bedrock", "Lambda", "DynamoDB"],
+    imageUrl: Sentiment_analysis, // Update with actual image path
   },
   {
-    title: "rmtDev",
+    title: "AWS Serverless URL Shortener",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: rmtdevImg,
+      "Developed a multi-tenant, scalable URL shortening service using AWS Lambda, API Gateway, Python, TypeScript, CDK. Implemented API key-based access, OAuth 2.0 authentication, rate limiting, and custom domain support.",
+    tags: ["AWS Lambda", "API Gateway", "Python", "TypeScript", "CDK"],
+    imageUrl: url_shortener, // Update with actual image path
   },
   {
-    title: "Word Analytics",
+    title: "Signature Verification System",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: wordanalyticsImg,
+      "Built an AI-powered signature verification system using AWS Textract, Next.js, and DynamoDB. Integrated a Siamese Neural Network model on AWS SageMaker for accurate signature matching.",
+    tags: ["Next.js", "AWS Textract", "DynamoDB", "SageMaker"],
+    imageUrl: signature_verifier, // Update with actual image path
   },
-] as const;
+  {
+    title: "Pre-Order Service Project Revamp",
+    description:
+      "Revamped a Windows Forms application into a web-based Next.js app for pre-order management. Migrated database queries from Oracle SQL to Microsoft SQL Server for improved scalability.",
+    tags: ["Next.js", "TypeScript", "Microsoft SQL Server"],
+    imageUrl: preorder, // Update with actual image path
+  },
+];
 
 export const skillsData = [
-  "HTML",
-  "CSS",
-  "JavaScript",
-  "TypeScript",
-  "React",
   "Next.js",
   "Node.js",
-  "Git",
-  "Tailwind",
-  "Prisma",
-  "MongoDB",
-  "Redux",
-  "GraphQL",
-  "Apollo",
   "Express",
+  "ShadCN",
+  "React",
+  "Redux",
+  "Recoil",
+  "JavaScript",
+  "TypeScript",
+  "AWS EC2",
+  "AWS CDK",
+  "AWS Lambda",
+  "AWS AP I Gateway",
+  "AWS Cognito",
+  "AWS CloudFront",
+  "AWS DynamoDB",
+  "AWS S3",
+  "OAuth 2.0",
+  "JWT",
+  "Material UI",
+  "Tailwind CSS",
+  "MongoDB",
+  "MySQL",
   "PostgreSQL",
+  "LLMs",
   "Python",
-  "Django",
-  "Framer Motion",
-] as const;
+  "Java",
+  "Docker",
+  "Git",
+  "HTML",
+  "CSS",
+];
