@@ -65,7 +65,7 @@ export default function Intro() {
       >
         <span className="font-bold">Hello, I'm Mayank Kumar.</span> I'm a{" "}
         <span className="font-bold">Full Stack Developer</span> with{" "}
-        <span className="font-bold">3.5+ years</span> of experience. I enjoy
+        <span className="font-bold"> ~4 years</span> of experience. I enjoy
         building <span className="italic">scalable web applications</span> using{" "}
         <span className="underline">Next.js, Node.js, React.js and AWS</span>.
       </motion.h1>
