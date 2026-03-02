@@ -2,13 +2,12 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
+import masterFflImg from "@/public/masterffl-screenshot.png";
+import pmjImg from "@/public/pmj-screenshot.png";
 import Sentiment_analysis from "@/public/Sentiment_analysis.png";
 import url_shortener from "@/public/url_shortener.png";
 import signature_verifier from "@/public/signature_verifier.png";
-import preorder from "@/public/quality.png";
+import insuranceImg from "@/public/Insurance.png";
 
 export const links = [
   {
@@ -39,18 +38,26 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Member of Technical Staff | Full Stack Developer",
-    location: "SMC Global Securities — Fintech, Delhi, India",
+    title: "Software Engineer - Full Stack (Senior Scope)",
+    location: "BenthonLabs, Noida, UP, India",
     description:
-      "Built AI Agent analysis system with RAG pipeline using AWS Bedrock Claude 3.7 Sonnet and voice embeddings, improving customer insights by 40%. Migrated legacy Pre-Order Service Project App to Next.js with serverless AWS architecture (S3, SQS, RDS, Lambda). Oracle to SQL Server migration. Developed URL shortener service with React dashboard using AWS CDK, Lambda, API Gateway, Cognito with 99% uptime. Built AI signature verification system with RAG architecture using Next.js, AWS Textract, DynamoDB, Llama 3.2 Vision, achieving 86% accuracy.",
+      "Architected and owned the Stripe subscription and usage-based billing system for the MasterFFL platform (70k+ dealers), designing idempotent webhook orchestration, Setup Intents, and resilient Node.js AWS Lambda services with PostgreSQL. Designed and implemented Elasticsearch-based search and autocomplete functionality for 70k+ dealers, achieving sub-200ms response times at scale. Designed OCR automation pipeline using AWS Textract processing 500+ documents/week with confidence scoring and human validation. Built and operated 10 Lambda microservices on AWS with 95% reliability. Migrated Philip Morris Jezos Japan Platform to AWS Lambda serverless, designing horizontally scalable event-driven workflows handling 1M+ daily messages with 60% cost reduction.",
     icon: React.createElement(CgWorkAlt),
-    date: "July 2024 - Present",
+    date: "October 2025 - Present",
   },
   {
-    title: "Digital Specialist Engineer | Full Stack Developer",
-    location: "Infosys Limited, Chandigarh, Haryana",
+    title: "Member of Technical Staff - Backend Developer",
+    location: "SMCI Global Securities Ltd (Fintech), New Delhi, India",
     description:
-      "Built full-stack order tracking application for Wabtec Corporation using Node.js, React.js, enhancing real-time visibility and inventory control. Designed and developed RESTful APIs using Node.js, Express.js for real-time container tracking, processing 10,000+ daily requests with 99% uptime. Implemented Cerbos RBAC/ABAC authorization in microservices architecture including security incidents by 70%. Optimized frontend performance by 40% using React.js, Material UI, Recoil, achieving 30% faster page loads.",
+      "Built AI Agent sentiment analysis system with RAG pipeline using AWS Bedrock Claude and vector embeddings, Dynamo db and PostgreSQL processing 10k+ chat interactions. Led modernization of legacy Windows Forms RegTech application to Next.js and nest.js with serverless AWS architecture achieving 60% performance improvement. Developed highly available URL shortener with React dashboard using AWS CDK, Lambda, API Gateway, and DynamoDB handling 50k+ monthly redirects with sub-100ms latency. Engineered AI signature verification solution with Next.js using Textract OCR and Llama Vision achieving 86% validation accuracy.",
+    icon: React.createElement(CgWorkAlt),
+    date: "July 2024 - October 2025",
+  },
+  {
+    title: "Digital Specialist Engineer - Full Stack Developer",
+    location: "Infosys Limited, Chandigarh, India",
+    description:
+      "Developed full-stack railcar and container tracking application for Wabtec using Node.js, nest.js and React providing real-time visibility across 5k+ assets improving inventory control by 35%. Designed RESTful APIs using Node.js, Express.js for real-time container tracking processing 10k+ daily requests with 99.9% uptime, leveraging Sentry for error monitoring, triage, and alert-driven debugging while integrating services with MongoDB. Implemented Cerbos Role based and attributes based authorization across microservices enabling fine-grained access control reducing security incidents by 75%. Optimized frontend performance by 40% using code splitting, lazy loading, and efficient state management.",
     icon: React.createElement(CgWorkAlt),
     date: "June 2022 - July 2024",
   },
@@ -58,32 +65,39 @@ export const experiencesData = [
 
 export const projectsData = [
   {
+    title: "MasterFFL Platform - Stripe Billing System",
+    description:
+      "Architected and owned the Stripe subscription and usage-based billing system for the MasterFFL platform (70k+ dealers), designing idempotent webhook orchestration, Setup Intents, and resilient Node.js AWS Lambda services with PostgreSQL. Designed and implemented Elasticsearch-based search and autocomplete functionality for 70k+ dealers, achieving sub-200ms response times at scale. Designed OCR automation pipeline using AWS Textract processing 500+ documents/week with confidence scoring and human validation. Built and operated 10 Lambda microservices on AWS with 95% reliability.",
+    tags: ["Stripe", "Node.js", "AWS Lambda", "PostgreSQL", "Elasticsearch", "AWS Textract", "Webhook Orchestration", "Microservices"],
+    imageUrl: masterFflImg,
+  },
+  {
+    title: "Philip Morris Jezos Japan Platform Migration",
+    description:
+      "Migrated Philip Morris Jezos Japan Platform to AWS Lambda serverless, designing horizontally scalable event-driven workflows handling 1M+ daily messages with 60% cost reduction. Implemented rate limiting and multi-level Redis caching for Crozoid APIs achieving 70% hit rate. Built CI/CD pipeline for PMJ application using AWS CodeBuild and CodePipeline enabling automated build and deployments.",
+    tags: ["AWS Lambda", "Event-Driven Architecture", "Redis", "AWS CodeBuild", "CodePipeline", "Node.js", "Serverless"],
+    imageUrl: pmjImg,
+  },
+  {
     title: "AI Agent Chat Sentiment Analysis Platform",
     description:
-      "Built AI Agent chat sentiment analysis platform with RAG-powered conversational retrieval using AWS Bedrock Claude 3.7 Sonnet and serverless Lambda functions. Developed AI Agent Chat Sentiment Analysis Platform with RAG pipeline using AWS Bedrock, Claude 3.7 Sonnet, Lambda, Next.js. Built production AI Agent verification system with RAG architecture using Next.js, AWS Textract, Next.js, DynamoDB, and Llama 3.2 Vision.",
-    tags: ["AWS Bedrock", "Claude 3.7 Sonnet", "Lambda", "Next.js", "RAG", "DynamoDB"],
+      "Built AI Agent sentiment analysis system with RAG pipeline using AWS Bedrock Claude and vector embeddings, processing 10k+ chat interactions. Implemented RAG-powered conversational retrieval using AWS Bedrock Claude and serverless Lambda functions. Achieved significant improvement in customer insights through sentiment analysis.",
+    tags: ["AWS Bedrock", "Claude", "RAG", "Lambda", "Vector Databases", "DynamoDB", "PostgreSQL"],
     imageUrl: Sentiment_analysis,
   },
   {
-    title: "Pre-Order Service Project Revamp",
+    title: "AI Signature Verification System",
     description:
-      "Migrated legacy Windows Forms pre-order system to Next.js with TypeScript, Oracle to SQL Server migration for 60% performance improvement. Built serverless voice processing pipeline using AWS CDK, S3, SQS, ECS, RDS PostgreSQL with event-driven architecture. Developed microservices architecture, RESTful APIs, YAML API, and auto-scaling.",
-    tags: ["Next.js", "TypeScript", "AWS CDK", "Microsoft SQL Server", "AWS S3", "AWS SQS", "AWS ECS", "RDS"],
-    imageUrl: preorder,
-  },
-  {
-    title: "AWS Serverless URL Shortener",
-    description:
-      "Developed a scalable URL shortening service using AWS Lambda, API Gateway, Python, TypeScript, CDK. Implemented a stateless website with the CloudFront CDN, and Cognito. Implemented API key-based access, OAuth 2.0 authentication and rate limiting.",
-    tags: ["AWS Lambda", "API Gateway", "Python", "TypeScript", "CDK", "CloudFront", "Cognito"],
-    imageUrl: url_shortener,
-  },
-  {
-    title: "AI Agent Signature Verification System",
-    description:
-      "Built production AI Agent verification system with RAG architecture using Next.js, AWS Textract, Bedrock, Llama 3.2 Vision. Implemented RAG-enhanced workflows with Llama 3.2 Vision on AWS Bedrock for signature validation and compliance verification with 86% accuracy.",
-    tags: ["Next.js", "AWS Textract", "Bedrock", "Llama 3.2 Vision", "RAG"],
+      "Engineered AI signature verification solution with Next.js using AWS Textract OCR and Llama Vision achieving 86% validation accuracy. Built production system with confidence scoring and human validation workflows for compliance verification. Processes 500+ documents weekly with automated validation.",
+    tags: ["Next.js", "AWS Textract", "Llama Vision", "OCR", "AI/ML"],
     imageUrl: signature_verifier,
+  },
+  {
+    title: "Highly Available URL Shortener",
+    description:
+      "Developed highly available URL shortener with React dashboard using AWS CDK, Lambda, API Gateway, and DynamoDB handling 50k+ monthly redirects with sub-100ms latency. Implemented Cognito JWT authentication and role-based authorization enabling secure integrations, real-time tracking, and reliable webhook orchestration.",
+    tags: ["React", "AWS CDK", "Lambda", "API Gateway", "DynamoDB", "Cognito", "TypeScript"],
+    imageUrl: url_shortener,
   },
 ];
 
@@ -92,51 +106,54 @@ export const skillsData = [
   "TypeScript",
   "Python",
   "Node.js",
-  "React",
+  "React.js",
   "Next.js",
   "Express.js",
+  "Nest.js",
   "Redux",
-  "Recoil",
-  "MERN Stack",
-  "Java",
-  "SQL",
-  "MongoDB",
-  "MySQL",
-  "PostgreSQL",
+  "Backend Concepts",
+  "REST",
+  "Event-Driven Design",
+  "Distributed Systems",
+  "Serverless Architecture",
+  "Microservices",
+  "Lambda",
+  "API Gateway",
+  "SQS",
+  "SNS",
+  "RDS",
   "DynamoDB",
+  "ECS",
+  "Cognito",
+  "Textract",
+  "Bedrock",
+  "CDR",
+  "PostgreSQL",
+  "MongoDB",
+  "DynamoDB",
+  "Elasticsearch",
+  "Redis",
+  "Sequelize",
+  "Mongoose",
+  "Sentry",
+  "Stripe",
+  "Subscriptions",
+  "Webhooks",
+  "Payment Gateway",
+  "Salesforce Marketing Cloud",
+  "RAG",
+  "LLM Integration",
+  "Claude",
+  "Llama",
   "Vector Databases",
-  "DevOps",
+  "OCR",
   "Docker",
-  "Microservices Architecture",
-  "RESTful APIs",
-  "YAML API",
-  "GraphQL",
-  "AWS EC2",
-  "AWS S3",
-  "AWS RDS",
-  "AWS Lambda",
-  "AWS DynamoDB",
-  "AWS CDK",
-  "AWS ECS",
-  "AWS CloudFront",
-  "AWS API Gateway",
-  "AWS Bedrock",
-  "AWS Textract",
-  "Claude 3.7 Sonnet",
-  "Llama 3.2 Vision",
-  "LLMs",
-  "RAG Architecture",
-  "AI Agent Development",
-  "Material UI",
-  "Tailwind CSS",
-  "ShadCN",
-  "System Design",
-  "Data Structures & Algorithms",
-  "Agile Methodologies",
-  "Problem Solving",
-  "HTML",
-  "CSS",
-  "ORM",
+  "Kubernetes",
+  "Git",
+  "CI/CD",
+  "Serverless Framework",
+  "CodeBuild",
+  "CodePipeline",
 ];
 
 export const educationData = [

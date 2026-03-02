@@ -19,25 +19,30 @@ export default function About() {
     >
       <SectionHeading>About me</SectionHeading>
       <p className="mb-3">
-        After graduating with a degree in{" "}
-        <span className="font-medium">Information Technology</span>, I worked as a{" "}
-        <span className="font-medium">Full Stack Developer</span> at Infosys Limited for 2 years, 
-        where I gained experience in designing RESTful APIs and building container shipment tracking systems. 
-        I'm currently working at{" "}
-        <span className="font-medium">SMC Global Securities</span> as a Member of Technical Staff.
+        Senior Backend and Full Stack Engineer with about{" "}
+        <span className="font-medium">4 years of experience</span> designing distributed, event-driven, and serverless systems across fintech, supply chain, and AI platforms. Expert in{" "}
+        <span className="font-medium">AWS microservices, Stripe payment and billing infrastructure</span>, and building{" "}
+        <span className="font-medium">RAG-driven LLM applications</span>. Proven track record of owning production workloads handling{" "}
+        <span className="font-medium">1M+ daily events</span>, building highly available architectures, and delivering platforms serving{" "}
+        <span className="font-medium">70k+ users</span>.
       </p>
 
       <p className="mb-3">
         My core tech stack includes{" "}
-        <span className="font-medium">JavaScript, TypeScript, React, Next.js, Node.js, Express, and AWS</span>.
-        I'm passionate about building scalable applications leveraging cloud technologies and 
-        have experience with AWS services like Lambda, DynamoDB, API Gateway, and Cognito.
+        <span className="font-medium">JavaScript, TypeScript, Python, Node.js, React.js, Next.js, Express.js, and Nest.js</span>. 
+        Expert in{" "}
+        <span className="font-medium">Backend Concepts, REST, Event-Driven Design, Distributed Systems, and Serverless Architecture</span>. 
+        Extensive experience with AWS services including{" "}
+        <span className="font-medium">Lambda, API Gateway, SQS, SNS, RDS, DynamoDB, ECS, Cognito, Textract, and Bedrock</span>. 
+        Proficient with databases like{" "}
+        <span className="font-medium">PostgreSQL, MongoDB, Elasticsearch, and Redis</span>.
       </p>
 
       <p>
-        <span className="italic">Apart from web development</span>, I enjoy solving algorithmic problems, exploring new technologies, and contributing to open-source projects. I've solved{" "}
-        <span className="font-medium">300+ problems</span> on platforms like CodeChef, LeetCode, GFG, and HackerRank. I'm passionate about{" "}
-        <span className="font-medium">continuous learning</span> and keeping up with the latest developments in tech.
+        <span className="italic">Beyond coding</span>, I'm passionate about solving algorithmic problems. 
+        I've solved{" "}
+        <span className="font-medium">450+ DSA problems</span> across LeetCode, CodeChef (3 Star - 1551 rating), GeeksforGeeks, and HackerRank. 
+        I enjoy exploring new technologies, contributing to open-source projects, and staying current with the latest developments in distributed systems and AI.
       </p>
     </motion.section>
   );
